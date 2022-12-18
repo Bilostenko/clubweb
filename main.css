@@ -8,7 +8,7 @@ body {
   font-family: 'Unbounded', sans-serif;
   color: #fff;
   font-weight: 600;
-  background-color: #212529;
+  background: linear-gradient(180deg, #333333 0%, #090707 11.98%)
 }
 
 a {
@@ -32,7 +32,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, #333333 0%, #090707 11.98%);
   box-sizing: border-box;
 }
 
@@ -164,6 +163,11 @@ span {
 /* SITE-OPTIONS */
 .site-options {
   margin-top: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .site-options__title {
@@ -176,13 +180,7 @@ span {
   margin-bottom: 80px;
 }
 
-.site-options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-sizing: border-box;
-}
+
 
 .site-options__cards-grid {
   margin-left: 5vw;
@@ -236,18 +234,55 @@ span {
   top: -35px;
 }
 
-/* .card4{
+.card4 {
   position: relative;
-} */
+}
 
 .card4>img {
   position: absolute;
 }
 
-/* .card4__b{
-  left: 1px;
-  top: 1px;
-} */
+.card4__b {
+  top: 20px;
+  right: 40%;
+
+}
+
+.card4__css {
+  top: 5%;
+  right: 12%;
+
+}
+
+.card4__html {
+  top: 80px;
+  right: 2%;
+}
+
+.card4__js {
+  bottom: 6%;
+  right: 8%;
+}
+
+.card4__python {
+  bottom: 4%;
+  right: 16%;
+}
+
+.card4__react {
+  bottom: 15px;
+  left: 12%;
+}
+
+.card4__vue {
+  bottom: 45%;
+  left: 3%;
+}
+
+.card4__W {
+  top: 4%;
+  left: 10%;
+}
 
 .card {
   display: flex;
@@ -318,7 +353,8 @@ span {
   height: auto;
   transition: .3s;
 }
-.developers__grid>div:hover > :not(:hover) {
+
+.developers__grid>div:hover> :not(:hover) {
   opacity: .9;
 }
 
@@ -506,3 +542,10 @@ span {
 .footer__list-item>img {
   cursor: pointer;
 }
+
+/* MEDIA */
+/* @media screen and (max-width: 1600px) {
+	body {
+		margin: 8rem auto 0 auto;
+	}
+} */
